@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 5</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">       
+   <style>
+        body {
+           background-color: #FFCA28;
+           font-family: "Roboto", Verdana, Arial, sans-serif;            
+           font-size: 1.1em;
+        }
+
+        fieldset {
+           margin: 20px 5px 0 25px;
+           padding: 5px 15px 15px 15px;
+        }
+
+        legend {
+           font-size: 1.25em;
+        }
+   </style>
+</head>
+<body>
+<form method="get" action="http://examples.funwebdev.com/process.php">
+  <fieldset>
+     <legend>Details</legend>
+     <p>
+       <label>Title: </label>
+       <input type="text" name="title" />
+     </p>
+     <p>
+      <label>Salary: </label>
+      <input type="text" name="salary" />
+    </p>
+     <p>
+       <label>Country: </label>
+       <select name="where">
+         <option>Choose a country</option>
+         <option>Canada</option>
+         <option>Finland</option>
+         <option>United States</option>
+         <option>India</option>
+         <option>New Zealand</option>
+         <option>Brazil</option>
+
+        </select>
+     </p>
+
+     <p>
+      <label>State: </label>
+      <select name="where">
+        <option>Choose a state</option>
+        <option>New Jersey</option>
+        <option>Iowa</option>
+        <option>Idaho</option>
+       </select>
+    </p>
+
+    <br/>
+<label>Continent:</label><br/>
+<input type="radio" name="where" value="1">North America<br/>
+<input type="radio" name="where" value="2" checked>South America<br/>
+<input type="radio" name="where" value="3">Asia<br/>
+<input type="radio" name="where" value="3">Africa<br/>
+<input type="radio" name="where" value="3">Antartica<br/>
+
+<br/>
+
+<label>I accept the software license</label>
+<input type="checkbox" name="accept" >
+   
+<label>Where would you like to visit? </label><br/>
+<input type="checkbox" name="visit" value="canada">Canada<br/>
+<input type="checkbox" name="visit" value="france">France<br/>
+<input type="checkbox" name="visit" value="germany">Germany</br>
+<input type="checkbox" name="visit" value="france">India<br/>
+<input type="checkbox" name="visit" value="france">New Zealand<br/>
+
+<br/>
+<form method="post" enctype="multipart/form-data"  >
+   ...
+   <label>Upload a travel photo</label>
+   <input type="file" name="photo" />
+   ...
+   </form>
+
+</br>
+</br>
+
+      <label>Rate this photo: </label><br/>
+      <input type="number" min="1" max="5" name="rate" />
+      1
+      <input type="range" min="0" max="10" step="1" name="happiness" />
+      10
+      
+
+
+
+   
+
+     <input type="submit" />
+  </fieldset>
+</form>
+</body>
+</html>
