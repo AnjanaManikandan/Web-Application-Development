@@ -1,0 +1,22 @@
+Input your course code here:
+<input type="text" id="classcode" required>
+</br>
+Input your teacher's name here:
+<input type="text" id="teacher" required>
+</br>
+<button type="submit" onclick="merge()"> Submit</button>
+<div id="output"></div>
+
+<script>
+
+const merge = (classcode, teacher) => {
+    output = "I am taking "+document.getElementById('classcode').value+" with "+ document.getElementById('teacher').value;
+    printMessage(output);
+}
+
+ const printMessage = (output) => {
+    //return output;   
+    document.getElementById('output').innerHTML = output;
+}
+
+</script>

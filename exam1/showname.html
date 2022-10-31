@@ -1,0 +1,28 @@
+<button style="font-size:larger;" type="button" onclick="showName()"> Show my name!</button>
+<div id="output"></div>
+
+<button
+  onclick="toggleDisplay(document.querySelector('#target'))">
+    Toggle display
+</button>
+
+<script>
+
+
+function showName(){
+    var myName = "Anjana Manikandan";
+    var empty = "";
+    var counter = 0;
+    if(counter%2==0){
+        output = myName;
+        document.getElementById('output').innerHTML = output;
+        counter++;
+    }
+    else{
+        output = empty;
+        document.getElementById('output').innerHTML = output;
+        counter++
+    }   
+}
+
+</script>
